@@ -1,14 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Programming languages</h1>
+<h1>Programming Languages</h1>
 
 <div id="programming_languages">
   <% @programming_languages.each do |programming_language| %>
-    <%= render programming_language %>
-    <p>
-      <%= link_to "Show this programming language", programming_language %>
-    </p>
+    <%= render partial: 'programming_language', locals: { programming_language: programming_language } %>
   <% end %>
 </div>
 
-<%= link_to "New programming language", new_programming_language_path %>
+<%= link_to 'New Programming Language', new_programming_language_path %>

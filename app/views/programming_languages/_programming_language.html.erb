@@ -1,12 +1,9 @@
-<div id="<%= dom_id programming_language %>">
+<div class="programming_language">
+  <h2><%= programming_language.name %></h2>
+  <p><%= programming_language.description %></p>
   <p>
-    <strong>Name:</strong>
-    <%= programming_language.name %>
+    <%= link_to 'Show', programming_language %> |
+    <%= link_to 'Edit', edit_programming_language_path(programming_language) %> |
+    <%= link_to 'Delete', programming_language, method: :delete, data: { confirm: 'Are you sure?' } %>
   </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= programming_language.description %>
-  </p>
-
 </div>
