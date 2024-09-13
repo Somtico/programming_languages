@@ -1,7 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+# db/seeds.rb
+
+ProgrammingLanguage.create([
+  { name: 'Ruby', description: 'A dynamic, object-oriented programming language.' },
+  { name: 'Python', description: 'A versatile language known for its readability and simplicity.' },
+  { name: 'JavaScript', description: 'A language commonly used for web development.' },
+  { name: 'Java', description: 'A high-level, class-based, object-oriented language.' },
+  { name: 'C++', description: 'An extension of C that includes object-oriented features.' }
+])
